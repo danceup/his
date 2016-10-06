@@ -27,8 +27,7 @@ var filesToCache = [
   '/his/js/app.js',
   '/his/css/style.css',
   '/his/images/his.png',
-  '/his/images/fuji.jpg',
-  '/his/images/move-top.png'
+  '/his/images/fuji.jpg'
    
 ];
 
