@@ -29,13 +29,28 @@
 		         $(".scroll").click(function(event){		
                      $("html, body").animate({ scrollTop: $('#top').offset().top }, 900);
                   });      
-                 $('#submit-search').click(function() {  
-                     
-                     $(".blog-info-login").animate({
+//                 $('#submit-search').click(function() {  
+//                     
+//                     $(".blog-info-login").animate({
+//                        left: '-150%'
+//                    }, 200);    
+//                     
+//                 });    
+//                
+                
+                
+                $("#fastRegisterForm").validate({
+                    submitHandler: function(form) {
+                        $(".blog-info-login").animate({
                         left: '-150%'
                     }, 200);    
-                     
-                 });    
+                        
+                    },
+                    focusInvalid: false
+                 
+			     });
+
+                
 				});
 </script>
     
@@ -89,27 +104,27 @@
 							       <div class="sign_in" id="sign_in_form" ng-controller="HomeCtrl">
 										<p class="sign"></p>
 										<form class="cmxform" id="fastRegisterForm" method="get" action="">
-                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-search"></i><input type="text" name="destinationName" class="text" value="" placeholder="Enter city name or country"  maxlength="100"></p>
-                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-in date" ></p>
-                                             <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-out date"></p>
-                                             <p class="inner-addon left-addon"><select class="selection" name="class" required>
+                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-search"></i><input type="text" name="destinationName" class="text" value="" placeholder="Enter city name or country"  maxlength="100" required></p>
+                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate"  class="text" value="" placeholder="Cheeck-in date" required></p>
+                                             <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckoutdate"  class="text" value="" placeholder="Cheeck-out date" required></p>
+                                             <p class="inner-addon left-addon"><select class="selection" name="numberofroom" required>
                                                 <option value="">Number of rooms</option>
-                                                  <option value="">1 Room</option>
-                                                <option value="">2 Rooms</option>
-                                                 <option value="">3 Rooms</option>
+                                                  <option value="1">1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                 <option value="3">3 Rooms</option>
                                                  </select></p>
-                                                  <p class="inner-addon left-addon"><select class="selection" name="class" required>
+                                                  <p class="inner-addon left-addon"><select class="selection" name="numberofadult" required>
                                                 <option value="">Number of Adults</option>
-                                                  <option value="">1 Adult</option>
-                                                <option value="">2 Adults</option>
-                                                 <option value="">3 Adults</option>
+                                                  <option value="1">1 Adult</option>
+                                                <option value="3">2 Adults</option>
+                                                 <option value="3">3 Adults</option>
                                                  </select></p>
                                             
-                                             <p class="inner-addon left-addon"><select class="selection" name="class" required>
+                                             <p class="inner-addon left-addon"><select class="selection" name="numberofchildren" >
                                                 <option value="">Number of Child</option>
-                                                  <option value="">1 Child</option>
-                                                <option value="">2 Children</option>
-                                                 <option value="">3 Children</option>
+                                                  <option value="1">1 Child</option>
+                                                <option value="2">2 Children</option>
+                                                 <option value="3">3 Children</option>
                                                  </select></p>
                                             <div class="login-button-group">
                                                 <p><button class="" id="submit-search"><span class="glyphicon glyphicon-search"></span>Find Hotel</button></p>
