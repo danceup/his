@@ -15,20 +15,20 @@
 var dataCacheName = 'his-v1';
 var cacheName = 'his';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/js/app.js',
-  '/js/bootstrap-3.1.1.min.js',
-  '/js/easing.js',
-  '/js/jquery.chocolat.js',
-  '/js/jquery.flexisel.js',
-  '/js/jquery.min.js',
-  '/js/jquery.validate.min.js',
-  '/js/app.js',
-  '/css/style.css',
-  '/images/his.png',
-  '/images/fuji.jpg',
-  '/images/ move-top.png'
+  '/his',
+  '/his/index.html',
+  '/his/js/app.js',
+  '/his/js/bootstrap-3.1.1.min.js',
+  '/his/js/easing.js',
+  '/his/js/jquery.chocolat.js',
+  '/his/js/jquery.flexisel.js',
+  '/his/js/jquery.min.js',
+  '/his/js/jquery.validate.min.js',
+  '/his/js/app.js',
+  '/his/css/style.css',
+  '/his/images/his.png',
+  '/his/images/fuji.jpg',
+  '/his/images/ move-top.png'
    
 ];
 
