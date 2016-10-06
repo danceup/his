@@ -1,0 +1,220 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>HIS</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Mikinet">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    
+          <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+    <meta http-equiv="imagetoolbar" content="no" />
+<link href="css/bootstrap-3.1.1.min.css" rel="stylesheet" type="text/css">
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<script src="js/jquery.min.js"> </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/app.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+		         $(".scroll").click(function(event){		
+                     $("html, body").animate({ scrollTop: $('#top').offset().top }, 900);
+				});
+</script>
+    
+<link rel="manifest" href="/manifest.json">
+</head>
+<body id="top"> 
+ <div class="">
+   <!--/start-banner-->
+  <div class="banner banner_change">
+      <header>
+       <div class="hearrrr">
+		<nav class="navbar navbar-default" role="navigation">
+            <div class="header-logo"></div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+<!--				<a class="navbar-brand" href="index.html"><h1>SR<span>Center</span></h1> </a>-->
+                
+                <a href="index.html" style="display:block;width:128px; float:left; z-index:999; background-image:url(images/his.png); 
+							background-size: 128px 50px; background-repeat:no-repeat; background-position:center left;
+				  			 padding-top:2px; height:50px">
+						</a>
+			</div>
+			<!--/.navbar-header-->
+		
+			<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					 <li><a href="index.html">Home</a></li>
+				   
+					<li><a href="manageBooking.html">Manage Booking</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<!--/.navbar-collapse-->
+	 <!--/.navbar-->
+	</nav>
+  </div>
+      </header>
+	       <div class="banner-inner">
+        
+                   
+                     <div id="banner-two">
+                        <div class="blog-info-login">
+                        <div>
+                            <h4><p class="glyphicon glyphicon-home"></p> <span>Hotel</span></h4>
+							       <div class="sign_in" id="sign_in_form" ng-controller="HomeCtrl">
+										<p class="sign"></p>
+										<form class="cmxform" id="fastRegisterForm" method="get" action="">
+                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-search"></i><input type="text" name="destinationName" class="text" value="" placeholder="Enter city name or country"  maxlength="100" required></p>
+                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-in date" required></p>
+                                             <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-out date" required></p>
+                                             <p class="inner-addon left-addon"><select class="selection" name="class" required>
+                                                <option value="">Number of rooms</option>
+                                                  <option value="">1 Room</option>
+                                                <option value="">2 Rooms</option>
+                                                 <option value="">3 Rooms</option>
+                                                 </select></p>
+                                                  <p class="inner-addon left-addon"><select class="selection" name="class" required>
+                                                <option value="">Number of Adults</option>
+                                                  <option value="">1 Adult</option>
+                                                <option value="">2 Adults</option>
+                                                 <option value="">3 Adults</option>
+                                                 </select></p>
+                                            
+                                             <p class="inner-addon left-addon"><select class="selection" name="class" required>
+                                                <option value="">Number of Child</option>
+                                                  <option value="">1 Child</option>
+                                                <option value="">2 Children</option>
+                                                 <option value="">3 Children</option>
+                                                 </select></p>
+                                            <div class="login-button-group">
+                                                <p><button class="submit" type="submit"><span class="glyphicon glyphicon-search"></span>Find Hotel</button></p>
+                                               
+                                            </div>
+										</form>
+									</div>
+                                    
+                               
+						</div>
+                      </div>
+                    </div>
+             
+				</div>
+  </div>
+    <!--//end-banner-->
+    
+		<!--//soccer-inner-->
+	 </div>
+	<!--/start-footer-section-->
+			<div class="footer-section">
+			   <div class="container">
+					<div class="footer-grids">
+						<div class="col-md-4 footer-grid">
+						<h4><span>Product Offering</span></h4>
+						  <div class="editor-pics">
+							 <div class="col-md-3 item-pic">
+                                 <i class="glyphicon glyphicon-home" style="color:#fff; font-size:5.0em"></i>
+							   </div>
+					   	        <div class="col-md-9 item-details">
+							    	<h5 class="inner" style="color:#b2b2b2">
+                                                    <p> Hotel</p>
+                                                    <p> Transfer</p>
+                                                     <p> Activity</p>
+                                   </h5>
+							     </div>
+								<div class="clearfix"></div>
+							</div>
+						
+		
+						</div>
+						<div class="col-md-4 footer-grid">
+							<h4><span>CALL US</span> </h4>
+								<div class="editor-pics">
+										 <div class="col-md-3 item-pic">
+										  <!-- <img src="images/f4.jpg" class="img-responsive" alt=""/>-->
+                                             <i class="glyphicon glyphicon-phone-alt" style="color:#fff; font-size:5.0em"></i>
+
+										   </div>
+											<div class="col-md-9 item-details">
+												<h5 class="inner" style="color:#b2b2b2">
+                                                    <p><i class="glyphicon glyphicon-earphone"></i> TEL.: 02-022-0929</p>
+                                                    <p><i class="glyphicon glyphicon-phone"></i> FAX.: 02-229-4919</p>
+                                                     <p><i class="glyphicon glyphicon-phone-alt"></i> email: tha-smartbooking@his-world.com</p>
+                                                </h5>
+												 
+											 </div>
+											<div class="clearfix"></div>
+										</div>
+										
+
+						</div>
+                        <div class="col-md-4 footer-grid">
+							<h4><span>About Us</span> </h4>
+								<div class="editor-pics">
+										 <div class="col-md-3 item-pic">
+										  <!-- <img src="images/f4.jpg" class="img-responsive" alt=""/>-->
+                                            <i class="glyphicon glyphicon-flag" style="color:#fff; font-size:5.0em"></i>
+										   </div>
+											<div class="col-md-9 item-details">
+												<h5 class="inner" style="color:#b2b2b2">his is an online tour operator open 24 hours a day 7 days a week, that serve you an exclusive deals on hotels, air tickets, package tours and optional tours.</h5>
+												 
+											 </div>
+											<div class="clearfix"></div>
+										</div>
+										
+
+						</div>
+					
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+	<!--//end-footer-section-->
+			<!--/start-copyright-section-->
+				<div class="copyright">
+						  <p>&copy;  </p>
+					</div>
+
+
+				<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+<!--JS-->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+<!--//JS-->
+
+</body>
+</html>
