@@ -28,6 +28,14 @@
 			jQuery(document).ready(function($) {
 		         $(".scroll").click(function(event){		
                      $("html, body").animate({ scrollTop: $('#top').offset().top }, 900);
+                  });      
+                 $('#submit-search').click(function() {  
+                     
+                     $(".blog-info-login").animate({
+                        left: '-150%'
+                    }, 200);    
+                     
+                 });    
 				});
 </script>
     
@@ -71,7 +79,7 @@
 	</nav>
   </div>
       </header>
-	       <div class="banner-inner">
+	       <div class="banner-inner" id="hotel-search">
         
                    
                      <div id="banner-two">
@@ -81,9 +89,9 @@
 							       <div class="sign_in" id="sign_in_form" ng-controller="HomeCtrl">
 										<p class="sign"></p>
 										<form class="cmxform" id="fastRegisterForm" method="get" action="">
-                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-search"></i><input type="text" name="destinationName" class="text" value="" placeholder="Enter city name or country"  maxlength="100" required></p>
-                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-in date" required></p>
-                                             <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-out date" required></p>
+                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-search"></i><input type="text" name="destinationName" class="text" value="" placeholder="Enter city name or country"  maxlength="100"></p>
+                                            <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-in date" ></p>
+                                             <p class="inner-addon left-addon"><i class="glyphicon glyphicon-calendar"></i><input type="text" name="cheeckindate" minlength="9" maxlength="30" class="text" value="" placeholder="Cheeck-out date"></p>
                                              <p class="inner-addon left-addon"><select class="selection" name="class" required>
                                                 <option value="">Number of rooms</option>
                                                   <option value="">1 Room</option>
@@ -104,7 +112,7 @@
                                                  <option value="">3 Children</option>
                                                  </select></p>
                                             <div class="login-button-group">
-                                                <p><button class="submit" type="submit"><span class="glyphicon glyphicon-search"></span>Find Hotel</button></p>
+                                                <p><button class="" id="submit-search"><span class="glyphicon glyphicon-search"></span>Find Hotel</button></p>
                                                
                                             </div>
 										</form>

@@ -569,6 +569,7 @@ label.error {
 }
 #banner-two { 
   margin: auto; 
+  
   width:48%;
 }
 
@@ -1123,6 +1124,7 @@ a.news:hover{
 }
 
 .blog-info-login {
+    position: relative;
     font-family: 'thaisans_neue_lightregular';
     background-color: rgba(2, 0, 8, 0.59);
     padding: 3em 3em;
