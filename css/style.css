@@ -569,8 +569,7 @@ label.error {
 }
 #banner-two { 
   margin: auto; 
-  
-  width:48%;
+  width:50%;
 }
 
 .banner-info p{
@@ -1510,7 +1509,7 @@ font-family:'Sukhumvit Set', 'thaisans_neue_lightregular';
     width: 100%;
     padding: 8px 35px;
     border: none;
-    font-size: 0.9em;
+    font-size: 1.0em;
     color: #ffffff;
     outline: none;
     background: rgba(99, 99, 99, 0);
@@ -1523,7 +1522,7 @@ font-family:'Sukhumvit Set', 'thaisans_neue_lightregular';
     padding: 8px 10px;
     border: none;
     width: 100%;
-   font-size: 0.9em;
+   font-size: 1.0em;
     --line-height: 1.1;
     color: #ffffff;
     outline: none;
@@ -1741,7 +1740,6 @@ select option {
 
 .blog-info-login p {
     color: #fff;
-    font-size:1em;
     margin-top: 0.5em;
 }
 
@@ -3465,6 +3463,11 @@ p.sign {
 	.ab-inner h4 {
 		font-size: 1.3em;
 	}
+    
+        
+    .blog-info-login {
+        padding: 3em 1em;
+    }
 }
 @media (max-width:414px){
 	td.one {
