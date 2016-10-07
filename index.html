@@ -31,22 +31,23 @@
 			jQuery(document).ready(function($) {
 		         $(".scroll").click(function(event){		
                      $("html, body").animate({ scrollTop: $('#top').offset().top }, 900);
-                  });      
-//                 $('#submit-search').click(function() {  
-//                     
-//                     $(".blog-info-login").animate({
-//                        left: '-150%'
-//                    }, 200);    
-//                     
-//                 });    
-//                
+                  });                     
+                 
+                
+      /*          $("#hotel-search-loading").animate({
+                    right: '-150%'
+                 }, 500);  */
                 
                 $("#fastRegisterForm").validate({
                     submitHandler: function(form) {
-                        $(".blog-info-login").animate({
-                        left: '-150%'
-                    }, 200);    
+                        $("html, body").animate({ scrollTop: $('#top').offset().top }, 0);
                         
+                        $("#hotel-search").slideUp("slow");
+                        
+                       $("#hotel-search-loading").fadeIn();
+                       /* $("#hotel-search-loading").animate({
+                            left: '0%'
+                        }, 300);  */
                     },
                     focusInvalid: false
                  
@@ -103,11 +104,11 @@
 	</nav>
   </div>
       </header>
-	       <div class="banner-inner" id="hotel-search">
+	       <div class="banner-inner" id="">
         
                    
                      <div id="banner-two">
-                        <div class="blog-info-login">
+                        <div class="blog-info-login" id="hotel-search">
                         <div>
                             <h4><p class="glyphicon glyphicon-home"></p> <span>Hotel</span></h4>
 							       <div class="sign_in" id="sign_in_form" ng-controller="HomeCtrl">
@@ -142,6 +143,21 @@
                                             </div>
 										</form>
 									</div>
+                                    
+                               
+						</div>
+                      </div>
+                         
+                        <div class="blog-info-login" id="hotel-search-loading" style="display: none">
+                        <div>
+                           
+							      <div class="sign_in sign_in_success" id="sign_in_inprogress">
+									<h3 style="text-align: center">Searching Hotels...</h3>
+									<div style="text-align: center; color: #378e09; font-size: 5em">
+										<img src="images/loading2.gif" style="width:50px; height:50px;">
+									</div>
+
+								</div>
                                     
                                
 						</div>
