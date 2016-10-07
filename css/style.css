@@ -3470,7 +3470,7 @@ p.sign {
     }
     
     .blog-info-login p {
-        font-size: 1.1em;
+        font-size: 1.2em; --fix-font-size-for-mobile-phone
     }
         
 }
