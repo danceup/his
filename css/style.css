@@ -3468,6 +3468,11 @@ p.sign {
     .blog-info-login {
         padding: 3em 1em;
     }
+    
+    .blog-info-login p {
+        font-size: 1.1em;
+    }
+        
 }
 @media (max-width:414px){
 	td.one {
