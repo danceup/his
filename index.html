@@ -42,9 +42,19 @@
                     submitHandler: function(form) {
                         $("html, body").animate({ scrollTop: $('#top').offset().top }, 0);
                         
-                        $("#hotel-search").slideUp("slow");
+                        $("#hotel-search").slideUp();
                         
                        $("#hotel-search-loading").fadeIn();
+                        
+                        setTimeout(openSearchResult, 4000)
+			        	function openSearchResult() {
+			        		 $("#hotel-search-loading").slideUp();
+                        
+                             $("#hotel-search-result-panel").fadeIn();
+						}
+                       
+                      
+                       
                        /* $("#hotel-search-loading").animate({
                             left: '0%'
                         }, 300);  */
@@ -70,7 +80,6 @@
  <div class="">
    <!--/start-banner-->
   <div class="banner banner_change">
-      <header>
        <div class="hearrrr">
 		<nav class="navbar navbar-default" role="navigation">
             <div class="header-logo"></div>
@@ -103,7 +112,6 @@
 	 <!--/.navbar-->
 	</nav>
   </div>
-      </header>
 	       <div class="banner-inner" id="">
         
                    
@@ -162,10 +170,70 @@
                                
 						</div>
                       </div>
+                         
+                     
+                         
+                         
                     </div>
              
 				</div>
+      
+                     <div class="" id="hotel-search-result-panel" style="display:none">   
+                        <div class="blog-info-normal" id="blog-complete">
+							<div class="form_normal">
+								<div class="hotel-summary">
+                                <h3 style="text-align: center">London, United Kingdom: 107 results</h3>
+								<h4 style="text-align: center">Wed, 19 Oct 2016 to Thu, 20 Oct 2016 (1 night), for 2 adults, 1 room</h4>
+                                </div>
+                                <div class="hotel-search-result">
+                                <div class="col-xs-12 col-sm-12 col-lg-12 hotel-result-col">
+                                   <div class="col-xs-4 col-sm-3 col-lg-3 hotel-image">
+                                       <img src="images/hotel1.jpg"/>
+                                   </div>
+                                   <div class="col-xs-8 col-sm-6 col-lg-6 hotel-search-">
+                                       <p class="hotel-search-name">Days Hotel London North</p>
+                                       <p>London, United Kingdom</p>
+                                       <p class="star-rating"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></p>
+                                       <p class="hotel-search-detail" >This 3 star hotel is located in the city centre of London and was established in 2002. It is 14.0 Km from the Wembley Stadium and the nearest station is Edgware.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-lg-3">
+                                       <p class="available">Available</p>
+                                       <p class="hotel-summary-price">EUR 84.42</p>
+                                       <p>Room and breakfast</p>
+                                        <p>&nbsp;</p>
+                                        <div><button ><i class="glyphicon glyphicon-th-list"></i> Book and Details</button></div>
+                                   </div>
+                                </div>
+                                   <div class="clearfix"></div>
+                                </div>
+                                
+                                <div class="hotel-search-result">
+                                <div class="col-xs-12 col-sm-12 col-lg-12 hotel-result-col">
+                                   <div class="col-xs-4 col-sm-3 col-lg-3 hotel-image">
+                                       <img src="images/hotel2.jpg"/>
+                                   </div>
+                                   <div class="col-xs-8 col-sm-6 col-lg-6 hotel-search-">
+                                       <p class="hotel-search-name">La Suite West – Hyde Park</p>
+                                       <p>London, United Kingdom</p>
+                                       <p class="star-rating"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></p>
+                                       <p class="hotel-search-detail" >This 4 star hotel is located in the city centre of London and was established in 2002. It is 14.0 Km from the Wembley Stadium and the nearest station is Edgware.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-lg-3">
+                                       <p class="available">Available</p>
+                                       <p class="hotel-summary-price">EUR 135.55</p>
+                                       <p>Room and breakfast</p>
+                                        <p>&nbsp;</p>
+                                        <div><button ><i class="glyphicon glyphicon-th-list"></i> Book and Details</button></div>
+                                   </div>
+                                </div>
+                                   <div class="clearfix"></div>
+                                </div>
+							</div>
+						</div>
+                         </div>
   </div>
+     
+
     <!--//end-banner-->
     
 		<!--//soccer-inner-->
@@ -178,7 +246,7 @@
 						<h4><span>Product Offering</span></h4>
 						  <div class="editor-pics">
 							 <div class="col-md-3 item-pic">
-                                 <i class="glyphicon glyphicon-home" style="color:#fff; font-size:5.0em"></i>
+                                 <i class="glyphicon glyphicon-home" style="color:#fff; font-size:4.0em"></i>
 							   </div>
 					   	        <div class="col-md-9 item-details">
 							    	<h5 class="inner" style="color:#b2b2b2">
@@ -197,7 +265,7 @@
 								<div class="editor-pics">
 										 <div class="col-md-3 item-pic">
 										  <!-- <img src="images/f4.jpg" class="img-responsive" alt=""/>-->
-                                             <i class="glyphicon glyphicon-phone-alt" style="color:#fff; font-size:5.0em"></i>
+                                             <i class="glyphicon glyphicon-phone-alt" style="color:#fff; font-size:4.0em"></i>
 
 										   </div>
 											<div class="col-md-9 item-details">
@@ -219,7 +287,7 @@
 								<div class="editor-pics">
 										 <div class="col-md-3 item-pic">
 										  <!-- <img src="images/f4.jpg" class="img-responsive" alt=""/>-->
-                                            <i class="glyphicon glyphicon-flag" style="color:#fff; font-size:5.0em"></i>
+                                            <i class="glyphicon glyphicon-flag" style="color:#fff; font-size:4.0em"></i>
 										   </div>
 											<div class="col-md-9 item-details">
 												<h5 class="inner" style="color:#b2b2b2">his is an online tour operator open 24 hours a day 7 days a week, that serve you an exclusive deals on hotels, air tickets, package tours and optional tours.</h5>

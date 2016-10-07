@@ -19,6 +19,7 @@ var filesToCache = [
   '/his/index.html',
   '/his/js/app.js',
   '/his/js/bootstrap-3.1.1.min.js',
+  '/his/css/bootstrap-3.1.1.min.css', 
   '/his/js/easing.js',
   '/his/js/jquery.chocolat.js',
   '/his/js/jquery.flexisel.js',
