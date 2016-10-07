@@ -52,11 +52,6 @@
                  
 			     });
                 
-                $("a").click(function (event) {
-                    event.preventDefault();
-                    window.location = $(this).attr("href");
-                });
-                
                 var a=document.getElementsByTagName("a");
                 for(var i=0;i<a.length;i++){
                     a[i].onclick=function(){
@@ -139,6 +134,7 @@
                                                   <option value="1">1 Child</option>
                                                 <option value="2">2 Children</option>
                                                  <option value="3">3 Children</option>
+                                                  <option value="3">4 Children</option>
                                                  </select></p>
                                             <div class="login-button-group">
                                                 <p><button class="" id="submit-search"><span class="glyphicon glyphicon-search"></span>Find Hotel</button></p>
