@@ -7,7 +7,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="HIS">
   <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
-<link rel="apple-touch-startup-image" href="images/icon-256x256.png">
     
     
   <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
@@ -55,6 +54,15 @@
 
                 
 				});
+    var a=document.getElementsByTagName("a");
+    for(var i=0;i<a.length;i++)
+    {
+        a[i].onclick=function()
+        {
+            window.location=this.getAttribute("href");
+            return false
+        }
+    }
 </script>
   <meta name="mobile-web-app-capable" content="yes">  
 <link rel="manifest" href="json/manifest.json">
