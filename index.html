@@ -56,11 +56,11 @@
                             url: endpoint,
                             
                              cors: true,
-                            method: 'POST',
+                            type: 'POST',
                             data: searchCriteria,
                             dataType: 'json'
-                        }).done(function (data, status, jqXHR) {
-                            alert(jqXHR.responseText);
+                        }).done(function (data) {
+                            alert(data);
                             //input.formatJson();
                             //output.formatJson();
                         })
