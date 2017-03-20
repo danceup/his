@@ -55,8 +55,8 @@
                             },
                             url: endpoint,
                             
-                            crossOrigin: true,
-                            method: 'post',
+                             cors: true,
+                            method: 'POST',
                             data: searchCriteria,
                             dataType: 'json'
                         }).done(function (data, status, jqXHR) {
