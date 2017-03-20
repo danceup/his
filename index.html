@@ -45,8 +45,29 @@
                         $("#hotel-search").slideUp();
                         
                        $("#hotel-search-loading").fadeIn();
+                        var searchCriteria  = '{"requestAuditInfo":{"agentCode":"XXX001","requestPassword":"PASSWORDPASSWORD1234","requestDateTime":"2017-03-20T10:57:04.000Z","requestID":0},"hotelSearchCriteria":{"destination":{"cityNumbers":[20142]},"stayPeriod":{"checkinDate":"2017-04-18","numberOfNights":1},"rooms":[{"roomNo":1,"guests":[{"type":"ADT"}]}],"availabilityCriteria":{"availabilityIndicator":1},"priceCriteria":{"returnBestPriceIndicator":true},"resultDetails":{"returnHotelInfo":1},"languageCode":"en","currencyCode":"EUR","paxNationality":"GB"},"versionNumber":"7.0"}';
+                        var endpoint = 'https://test.mikinet.co.uk/interfaceWL/7.0/hotelSearch';
+                        alert(searchCriteria);
+                        $.ajax({
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            },
+                            url: endpoint,
+                            
+                            crossOrigin: true,
+                            method: 'post',
+                            data: searchCriteria,
+                            dataType: 'json'
+                        }).done(function (data, status, jqXHR) {
+                            alert(jqXHR.responseText);
+                            //input.formatJson();
+                            //output.formatJson();
+                        })
                         
-                        setTimeout(openSearchResult, 4000)
+                        
+                        
+//setTimeout(openSearchResult, 4000)
 			        	function openSearchResult() {
 			        		 $("#hotel-search-loading").slideUp();
                         
