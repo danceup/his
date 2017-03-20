@@ -54,11 +54,10 @@
                                 'Content-Type': 'application/json'
                             },
                             url: endpoint,
-                            
-                             cors: true,
+                            crossDomain: true,
+                            dataType: 'json',
                             type: 'POST',
                             data: searchCriteria,
-                            dataType: 'json'
                         }).done(function (data) {
                             alert(data);
                             //input.formatJson();
